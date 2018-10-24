@@ -1,0 +1,120 @@
+// main: ../styles.less 
+
+.dib{ display: inline-block;}
+.hide{ display: none}
+.block{display: block;}
+.show{ display: block}
+.oh{ overflow: hidden;}
+.fw{ width:100%}
+.fh{ height:100%}
+.ha{height: auto !important;}
+.brdn{ border:none;}
+.justify{text-align: justify;}
+.bg-none{background: none !important;}
+.linkColor{color: @link-color;}
+.link{
+  .linkColor;
+  font-family: @primary-font;
+  text-decoration: none !important;
+  &:active,&:hover,&:focus{
+    .linkColor;
+  }
+}
+
+.no-shadow{
+  .box-shadow(none);
+}
+
+.no-border{
+  .brdn !important;
+  &.table{
+    > tbody, >thead , >tfoot{
+      > tr{
+        > td, > th{
+          .brdn;
+        }
+      }
+    }
+  }
+}
+
+// Position
+.absolute{ position: absolute;}
+.fixed{ position: fixed;}
+.relative{ position: relative;}
+.static{position: static;}
+
+
+.fwl{ font-weight: 200; }
+.fwr{ font-weight: 400; }
+.fwb{ font-weight: 600; }
+.bold{ font-weight: 700;}
+.ex-bold{ font-weight: 800;}
+
+.text-lg{font-size: 16px;}
+.text-md{font-size: 14px;}
+.text-sm{font-size: 12px;}
+.text-xs{font-size: 10px;}
+.vm{ vertical-align: middle; }
+.u{text-decoration: underline;}
+.txt-dec-none{text-decoration: none;}
+.txt-white{color: white;}
+.txt-dark{color: #151515;}
+
+.cv{
+  top: 50%;
+  .translateY(-50%);
+}
+.ch{
+  left: 50%;
+  .translateX(-50%);
+}
+.ca{
+  left: 50%;
+  top: 50%;
+  .translate(-50% , -50%);
+}
+
+//Float
+.pull-none{float:none}
+.pull-right{float: right;}
+.pull-left{float: left;}
+
+.text-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.word-break{
+    display: inline-block;
+    width: 100%;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.cp{
+	cursor: pointer;
+}
+.top{vertical-align: top;}
+.txt-top{vertical-align: text-top;}
+.middle{vertical-align: middle;}
+.grey-border{border-bottom: 1px solid #f2f2f2;}
+.grey-text{color: #5e5e5e;}
+.light-grey{color: #c2c1c1;}
+
+.txt-primary{color: @primary-color;}
+.txt-secondary{color: @secondary-color;}
+
+//font-size
+.fnt-12{font-size: 12px;}
+.fnt-14{font-size: 14px;}
+.fnt-15{font-size: 15px;}
+.fnt-16{font-size: 16px;}
+.fnt-18{font-size: 18px;}
+.fnt-22{font-size: 22px;}
+.fnt-24{font-size: 24px;}
+.fnt-26{font-size: 26px;}
+.fnt-30{font-size: 30px;}
+.fnt-32{font-size: 32px;}
